@@ -49,7 +49,7 @@ if (empty($errors)) {
     );
 }
 
-// Return response as JSON
-header('Content-Type: application/json');
+// Return the JSON response
+header("Content-Type: application/json");
 echo json_encode($response);
 ?>
