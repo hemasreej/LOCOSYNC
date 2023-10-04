@@ -2,82 +2,117 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gait Analysis System</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invius Systems - Gait Abnormality Detection and Therapy</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#products">Products/Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Use a div for better styling and positioning -->
+    <div class="logo-container">
+      <img src="hemasreej/LOCOSYNC/images/inviu.jpg" alt="Company Logo">
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <h1>Welcome to Gait Revive!</h1>
-        <p>Empowering individuals with mobility challenges through innovative technology.</p>
-        <!-- Add interactive elements like video or sliders here -->
+  <div id="content">
+    <section id="home">
+      <div class="banner">
+        <h1>Welcome to Invius Systems</h1>
+        <p>Transforming lives through advanced gait analysis and therapy solutions</p>
+      </div>
     </section>
 
-    <!-- Technology Integration Section -->
-    <section id="tech">
-        <h2>Technology Integration</h2>
-        <p>Discover how Microsoft Kinect and IMU work together to detect and analyze gait abnormalities.</p>
-        <!-- Add visuals or diagrams here -->
-        <div class="image-container">
-            <img src="hemasreej/LOCOSYNC/images/122.png" alt="Technology Integration">
+    <section id="about">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>Invius Systems is a leading provider of innovative solutions for gait abnormality detection and therapy. Our mission is to improve the quality of life for individuals with mobility impairments, with a special focus on cerebral palsy cases.</p>
+        <!-- Add more details about your company, its history, mission, values, and team members -->
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="container">
+        <h2>Products/Services</h2>
+        <div class="product">
+          <img src="hemasreej/LOCOSYNC/images/122.png" alt="Product 1">
+          <div class="product-info">
+            <h3>Recognize Type of Gait</h3>
+            <p>Our advanced system utilizes computer vision and machine learning algorithms to accurately recognize different types of gait patterns in individuals.</p>
+          </div>
         </div>
-    </section>
-
-    <!-- Real-Time Feedback Section -->
-    <section id="feedback">
-        <h2>Real-Time Feedback</h2>
-        <p>Experience instant voice instructions for corrective measures. Watch how the system guides you to better posture and gait.</p>
-        <!-- Add demo video or simulation here -->
-        <div class="image-container">
-            <img src="hemasreej/LOCOSYNC/images/Screenshot 2023-08-07 063313.png" alt="Real-Time Feedback">
+        <div class="product">
+          <img src="hemasreej/LOCOSYNC/images/1233.png" alt="Product 2">
+          <div class="product-info">
+            <h3>Monitoring Gait through App</h3>
+            <p>Our mobile app allows users to easily monitor their gait patterns and track their progress over time. It provides valuable insights and personalized recommendations for improvement.</p>
+          </div>
         </div>
-    </section>
-
-    <!-- Virtual Therapy Section -->
-    <section id="therapy">
-        <h2>Virtual Therapy</h2>
-        <p>Access user-friendly virtual therapy exercises. Customize your program, track progress, and improve at your own pace.</p>
-        <!-- Add visuals and customization features here -->
-        <div class="image-container">
-            <img src="hemasreej/LOCOSYNC/Screenshot 2023-07-31 230926.png" alt="Virtual Therapy">
+        <div class="product">
+          <img src="hemasreej/LOCOSYNC/images/456.png" alt="Product 3">
+          <div class="product-info">
+            <h3>Virtual Therapy Platform</h3>
+            <p>Our virtual therapy platform offers interactive exercises, virtual reality simulations, and real-time feedback to facilitate effective gait therapy and rehabilitation.</p>
+          </div>
         </div>
+        <!-- Add more products/services with descriptions, images, and details -->
+      </div>
     </section>
 
-    <!-- Impact and Outreach Section -->
-    <section id="impact">
-        <h2>Impact and Outreach</h2>
-        <p>Learn how our system is making a difference, especially in underserved rural areas. Read stories of improved quality of life.</p>
-        <!-- Add testimonials or impact stories here -->
-        <div class="image-container">
-            <img src="hemasreej/LOCOSYNC/Screenshot 2023-06-22 160457.png" alt="Impact and Outreach">
-        </div>
-    </section>
-
-    <!-- Get Involved Section -->
-    <section id="involved">
-        <h2>Get Involved</h2>
-        <p>Discover how you can be a part of this initiative. Whether you're a user, physician, or supporter, your contribution matters.</p>
-        <!-- Add call-to-action buttons or forms for involvement -->
-        <div class="image-container">
-            <img src="Screenshot 2023-07-08 100355.png" alt="Get Involved">
-        </div>
-    </section>
-
-    <!-- Contact and Support Section -->
     <section id="contact">
-        <h2>Contact and Support</h2>
-        <p>Have questions or need support? Reach out to us. We're here to help!</p>
-        <!-- Add contact form or information -->
-        <div class="image-container">
-            <img src="Screenshot 2023-07-08 100355.png" alt="Contact and Support">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+          <p>For inquiries or more information:</p>
+          <ul>
+            <li>Phone: <a href="tel:1234567890">123-456-7890</a></li>
+            <li>Email: <a href="mailto:info@invius.com">info@invius.com</a></li>
+            <li>Address: 1234 Main Street, City, Country</li>
+          </ul>
         </div>
+        <form id="contact-form" action="submit-form.php" method="POST">
+          <h3>Send us a message</h3>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
     </section>
+  </div>
 
-    <script src="script.js"></script>
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Invius Systems. All rights reserved.</p>
+      <div class="social-media">
+        <!-- Use proper social media icons -->
+        <a href="#"><img src="linkedin_icon.png" alt="LinkedIn"></a>
+        <a href="#"><img src="instagram_icon.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Include JavaScript if needed -->
+  <!-- <script src="script.js"></script> -->
+
 </body>
 
 </html>
